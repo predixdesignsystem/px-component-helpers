@@ -1,5 +1,5 @@
 {
-  "name": "px-components-helpers",
+  "name": "px-component-helpers",
   "version": "1.0.0-alpha.1",
   "ignore": [
     ".*",
@@ -10,7 +10,7 @@
     "OSS_Notice.pdf",
     "scripts",
     ".github",
-    "px-components-helpers.png",
+    "px-component-helpers.png",
     "LICENSE.md",
     "CONTRIBUTING.md",
     "HISTORY.md",

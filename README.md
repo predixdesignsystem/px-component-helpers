@@ -1,4 +1,4 @@
-# px-components-helpers
+# px-component-helpers
 
 ## Overview
 
@@ -19,14 +19,14 @@ Node, npm and bower are necessary to install the component and dependencies. web
 First, install the component via bower on the command line.
 
 ```
-bower install px-components-helpers --save
+bower install px-component-helpers --save
 ```
 
 Import the components you need and use them in your component or app project.
 
 ## Documentation
 
-Read the full API and view the demo [here](https://predixdev.github.io/px-components-helpers).
+Read the full API and view the demo [here](https://predix-ui.com).
 
 The documentation in this repository is supplemental to the official Predix documentation, which is continuously updated and maintained by the Predix documentation team. Go to [http://predix.io](http://predix.io)  to see the official Predix documentation.
 
@@ -57,4 +57,4 @@ Navigate to the root of that server (e.g. http://localhost:8080/) in a browser t
 
 ## Known Issues
 
-Please use [Github Issues](https://github.com/PredixDev/px-components-helpers/issues) to submit any bugs you might find.
+Please use [Github Issues](https://github.com/predixdesignsystem/px-component-helpers/issues) to submit any bugs you might find.

@@ -1,5 +1,5 @@
 {
-    "name": "px-components-helpers",
+    "name": "px-component-helpers",
     "author": "General Electric",
     "description": "A Px component",
     "version": "0.0.1",
@@ -8,7 +8,7 @@
     "repository" :
     {
         "type": "git",
-        "url": "https://github.com/PredixDev/px-components-helpers.git"
+        "url": "https://github.com/predixdesignsystem/px-component-helpers.git"
     },
     "homepage": "http://predix.io/",
     "devDependencies": {

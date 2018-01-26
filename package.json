@@ -2,7 +2,7 @@
     "name": "px-component-helpers",
     "author": "General Electric",
     "description": "A Px component",
-    "version": "0.0.1",
+    "version": "1.0.0-alpha.1",
     "private": true,
     "extName" : null,
     "repository" :

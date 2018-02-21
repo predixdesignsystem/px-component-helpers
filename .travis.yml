@@ -18,5 +18,8 @@ before_script:
 - polymer install --variants
 script:
 - xvfb-run ./node_modules/.bin/wct --root $TRAVIS_BUILD_DIR --skip-plugin sauce
-- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then ./node_modules/.bin/wct --root
-  $TRAVIS_BUILD_DIR --plugin sauce --skip-plugin local; fi
+- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then ./node_modules/.bin/wct --root $TRAVIS_BUILD_DIR
+  --plugin sauce --skip-plugin local; fi
+env:
+  global:
+    secure: pZS2KjdhUshTyg8NOn7LbsSCDOxsMUeUA4FjYC6RxJuAt9UjtoQZ1JV8CIFopFAU58UOIqeCTeZnyK3kbCgyb+5yw23cGlJggQVdTZScUxAzonFwf2vXnKbmwqKj3Y9soj/eB3lJUaUFoOtLylvCCHgjbQHE+zJpYd5xLdhNjVllAL7w6dGlutCMPPbsM8Q4W5/PXE+sGdaCSp/taJpRjoWFgdFXEg6dVUIHt6O2KtnXswBQRtzW10OWH0Di1khpl1wmRUZ8k2/b5x2DiKUX+hz/BDVur6YV3cUXlE2DXlfLURTSLxfR4ctSDqfUta/wTdoeTkPNvgasTZ/RLLJ9h/DCTivIK8SeKdoNQ02azezd1FBkhFo9eaWYRzompYSL1p185GXnfQ0z6lwlQafECqdnQk9bbMWAZrr6EPyq8XyvMkVA8NCFFF/jGA66TojFXnfyrbysLZs6PJl4UuJMOYHdW2k9SCKpOaSkIsYjvlxrQPtgzeFBzDKWKar+sQAGh/2Hx4rLp72TrA/c+HbefJw7aDLmzktdfqq0yAQ/R0BAwwl3v3oSaqTugqt270ksfSC0BXU7ShePzqc+HXC7GtYxfQHV6/90LwA51MdXircJ1RH7p9GlpP2A5kV5Nu/4ThjXunPPwt4/SOZgp5a1mkWmviXXYjp3FbdnnqFTVV4=

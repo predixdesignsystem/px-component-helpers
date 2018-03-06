@@ -20,3 +20,36 @@ suite('Unique IDs', function() {
     assert.isFalse(Px.uniqueIds.has(id));
   });
 });
+
+suite('Clone object', function() {
+  let obj = {
+    foo: 'bar',
+    baz: {
+      a:1,
+      b:2
+    },
+    keyword: Infinity,
+    arr: [1,2,3],
+    fn: function() { return true; }
+  };
+  suiteSetup(() => {
+    fx = fixture('CommonBehaviorFixture');
+  });
+
+  test('copy into new obj works', function() {
+    let copy = fx.clone(obj);
+    assert.deepEqual(obj,copy);
+  });
+
+  test('copy keeps', function() {
+    let copy = {
+      existing: true
+    }
+    copy = fx.clone(obj, copy);
+
+    assert.isTrue(copy.existing);
+    delete copy.existing;
+    assert.deepEqual(obj,copy);
+
+  });
+});

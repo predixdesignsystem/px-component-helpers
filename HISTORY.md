@@ -1,3 +1,8 @@
+v1.2.0
+==================
+* Adding Symbol polyfills
+* Adding PxCommonBehavior.cloneObject behavior
+
 v1.1.0
 ==================
 * Adding polyfills

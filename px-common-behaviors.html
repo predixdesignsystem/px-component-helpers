@@ -49,4 +49,33 @@ PxCommonBehavior.uniqueIds = {
     window.Px.uniqueIds.delete(id);
   },
 };
+
+/*
+    Name:
+    PxCommonBehavior.cloneObject
+
+    Description:
+    Polymer behavior that provides a clone method for objects
+
+    @polymerBehavior PxCommonBehavior.cloneObject
+*/
+PxCommonBehavior.cloneObject = {
+  /*
+   * deep-copy object into newObject
+  */
+  clone: function(object, newObject) {
+    var newObject = newObject || {};
+    for (i in object) {
+      if (object.hasOwnProperty(i)) {
+        if (typeof object[i] === 'object' && object[i] !== null) {
+          newObject[i] = Array.isArray(object[i]) ? [] : {};
+          this.clone(object[i], newObject[i])
+        } else {
+          newObject[i] = object[i];
+        }
+      }
+    }
+    return newObject;
+  }
+};
 </script>
